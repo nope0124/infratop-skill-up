@@ -1,0 +1,9 @@
+<% if current_user.following?(user) %>
+  <%= link_to user_relationships_path(user.id), remote:true, method: :delete, class: "btn btn-outline-danger btn-block" do %>
+    <i class="fas fa-user-check"></i>
+  <% end %>
+<% else %>
+  <%= link_to user_relationships_path(user.id), remote:true, method: :post, class: "btn btn-outline-primary btn-block" do %>
+    <i class="fas fa-user-plus"></i>
+  <% end %>
+<% end %>
