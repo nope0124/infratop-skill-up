@@ -1,24 +1,33 @@
-# README
+# Bookers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p>株式会社インフラトップのスキルアップ研修課題です。</p>
+<p>本の共有をするサイトです。</p>
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+<p>本、ユーザーに関する7つのアクションの他に</p>
+<ul>
+  <li>コメント機能</li>
+  <li>いいね機能(非同期)</li>
+  <li>フォローフォロワー機能(非同期)</li>
+  <li>検索機能</li>
+</ul>
+<p>が付いています。</p>
 
-* System dependencies
+## Version
 
-* Configuration
+![badge](https://img.shields.io/static/v1?label=Ruby&message=2.6.3&color=red)
+![badge](https://img.shields.io/static/v1?label=Rails&message=5.2.6&color=red)
 
-* Database creation
+## Installation
 
-* Database initialization
+```
+$ git clone https://github.com/nope0124/infratop-skill-up.git
+$ cd infratop-skill-up-master
+$ bundle install
+$ rails db:migrate:reset
+$ rails s
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+©︎ CopyRight Infratop.inc
